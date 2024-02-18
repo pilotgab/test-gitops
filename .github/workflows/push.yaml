@@ -10,6 +10,7 @@ jobs:
   push:
     uses: pilotgab/actions-templates/.github/workflows/publish.yaml@main
 
+    
   staging-deploy:
     needs: push
     if: contains('refs/heads/dev', github.ref)
